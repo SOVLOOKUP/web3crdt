@@ -7,7 +7,7 @@ export * from "./type"
 
 // (todo 批量防抖 批量广播/批量接收)
 // 同步 Loro 对象
-const syncLoro = async (loro: Loro, syncID: string, libp2p?: Libp2p<Libp2pServices>) => {
+const sync = async (loro: Loro, syncID: string, libp2p?: Libp2p<Libp2pServices>) => {
     const swt = await newNetSwitch<{ version: Uint8Array, updates?: Uint8Array }>(syncID, libp2p)
 
     // 随机选择一个 peer 比对版本信息
@@ -63,4 +63,4 @@ const syncLoro = async (loro: Loro, syncID: string, libp2p?: Libp2p<Libp2pServic
     }
 }
 
-export { syncLoro };
+export { sync };

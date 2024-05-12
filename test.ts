@@ -1,9 +1,9 @@
 import { Loro, LoroList } from "loro-crdt"
-import { syncLoro } from "./src"
+import { sync } from "./src"
 
 const a = new Loro()
 console.log(a.peerIdStr)
-syncLoro(a, "testloro111")
+sync(a, "testloro111")
 
 const map = a.getMap("map");
 const list = map.setContainer("list221", new LoroList());
