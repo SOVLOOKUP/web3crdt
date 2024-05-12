@@ -3,6 +3,7 @@ import { draw } from "radash"
 import { newNetSwitch } from './switch'
 import { Libp2pServices } from "./type"
 import { Libp2p } from "@libp2p/interface"
+export * from "./type"
 
 // (todo 批量防抖 批量广播/批量接收)
 // 同步 Loro 对象
