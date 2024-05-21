@@ -19,7 +19,7 @@
 		"@libp2p/peer-id": "^4.1.1",
 		"cborg": "^4.2.0",
 		"helia": "^4.2.1",
-		"loro-crdt": "^0.15.4",
+		"loro-crdt": "^0.16.0",
 		"queueable": "^5.3.2",
 		"radash": "^12.1.0"
 	},
